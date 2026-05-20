@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bub-bees!</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>The Bub-bees</h1>
+        <div class="scroll-hint">Scroll! ➔</div>
+    </header>
+
+    <main class="stage-container">
+        
+        <svg class="svg-container" viewBox="0 0 1000 600" preserveAspectRatio="none">
+            <defs>
+                <mask id="mask-page-0">
+                    <path id="path-page-0-mask" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" d="M -50 350 C 150 200, 200 500, 400 350 C 450 300, 550 200, 500 350 C 450 480, 380 320, 520 280 C 650 250, 700 450, 1050 350" />
+                </mask>
+                <mask id="mask-page-1">
+                    <path id="path-page-1-mask" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" d="M -50 350 C 100 350, 150 200, 300 300 C 400 400, 500 450, 550 300 C 600 150, 450 150, 500 320 C 550 480, 750 350, 1050 350" />
+                </mask>
+            </defs>
+
+            <path id="path-page-0-visual" class="flight-path-visual" mask="url(#mask-page-0)" d="M -50 350 C 150 200, 200 500, 400 350 C 450 300, 550 200, 500 350 C 450 480, 380 320, 520 280 C 650 250, 700 450, 1050 350" />
+            
+            <path id="path-page-1-visual" class="flight-path-visual" mask="url(#mask-page-1)" d="M -50 350 C 100 350, 150 200, 300 300 C 400 400, 500 450, 550 300 C 600 150, 450 150, 500 320 C 550 480, 750 350, 1050 350" />
+        </svg>
+
+        <div id="milestones-layer"></div>
+
+        <div class="bee-container" id="bee">
+            <div class="bee-wing wing-left"></div>
+            <div class="bee-wing wing-right"></div>
+            <div class="bee-body"></div>
+        </div>
+
+        <button class="interaction-btn" id="actionBtn">Smell the flowers?</button>
+    </main>
+
+    <div class="memory-modal" id="memory">
+        <button class="close-btn" onclick="closeMemory()">X</button>
+        <div class="memory-image" id="mem-img"></div>
+        <div class="memory-date" id="mem-date"></div>
+        <div class="memory-text" id="mem-desc"></div>
+    </div>
+
+    <div class="scroll-spacer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
