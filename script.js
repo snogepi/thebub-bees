@@ -12,7 +12,7 @@ const storyPages = [
         milestones: [
             { id: 4, pathPercent: 0.25, icon: "https://img.icons8.com/?size=100&id=vgvdUorODfWE&format=png&color=000000", modalIcon: "memories/memory004.jpg", date: "august 2024", desc: "first birthday salubong" }, // lavender
             { id: 5, pathPercent: 0.58, icon: "https://img.icons8.com/?size=100&id=fvhMoHEKVJMg&format=png&color=000000", modalIcon: "memories/memory005.jpg", date: "october 2024", desc: "i don't remember why you were here you probably just missed me" }, // daisy
-            { id: 6, pathPercent: 0.85, icon: "https://img.icons8.com/?size=100&id=gBbOveYifc4w&format=png&color=000000", modalIcon: "memories/memory006.jpg", date: "december 2024", desc: "1ST CHRISTMAS" } // mistletoe
+            { id: 6, pathPercent: 0.85, icon: "https://img.icons8.com/?size=100&id=gBbOveYifc4w&format=png&color=000000", modalIcon: "memories/memory006.jpg", date: "december 2024", desc: "thank you for the christmas experience" } // mistletoe
         ]
     },
     {
